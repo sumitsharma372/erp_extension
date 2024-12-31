@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "ERP Button Injector",
+    "version": "1.0",
+    "description": "Inject a button to trigger 'Update Profile' on IIT ERP",
+    "permissions": ["activeTab"],
+    "host_permissions": [
+      "https://erp.iitkgp.ac.in/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://erp.iitkgp.ac.in/IIT_ERP3/showmenu.htm"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
